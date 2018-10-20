@@ -1,3 +1,5 @@
+package Lab8;
+
 public class QuackEcho implements Quackable{
     protected Quackable quack;
 

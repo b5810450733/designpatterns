@@ -1,3 +1,5 @@
+package Lab8;
+
 public class DuckCall implements Quackable {
     @Override
     public void quack() {

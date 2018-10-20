@@ -1,3 +1,5 @@
+package Lab8;
+
 public class EchoingDuckFactory extends AbstractDuckFactory {
     @Override
     public Quackable createMallardDuck() {

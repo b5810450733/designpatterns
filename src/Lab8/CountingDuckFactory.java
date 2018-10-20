@@ -1,3 +1,5 @@
+package Lab8;
+
 public class CountingDuckFactory extends AbstractDuckFactory {
 
     @Override

@@ -1,3 +1,5 @@
+package Lab8;
+
 import java.util.ArrayList;
 
 public class Flock implements Quackable{
