@@ -42,6 +42,16 @@ public class SingleTour implements Tour {
 
     @Override
     public int getAvailableSeats() {
-        return 0;
+        return this.allSeats - this.reservedSeats;
+    }
+
+    @Override
+    public String toString() {
+        return "SingleTour{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", allSeats=" + allSeats +
+                ", reservedSeats=" + reservedSeats +
+                '}';
     }
 }
