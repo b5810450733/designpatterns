@@ -22,6 +22,10 @@ public class PackageTour implements Tour {
         this.tours.remove(tour);
     }
 
+    public int allTour(){
+        return tours.size();
+    }
+
     @Override
     public String getName() {
         return this.packageName;
