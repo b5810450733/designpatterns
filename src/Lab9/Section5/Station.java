@@ -4,7 +4,7 @@ public class Station {
     protected String name;
     protected int cost;
 
-    public Station(String name, int cost) {
+    public Station(String name, int cost) { // เพิ่มสถานี
         this.name = name;
         this.cost = cost;
     }
