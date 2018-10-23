@@ -45,8 +45,30 @@ public class VendingMachine {
     }
 
     public void payCoin(int coin){
-        
-
+        this.nowState = PROCEED;
+        this.nowCost -= coin;
+        int change = coin - nowCost;
+        if (nowCost == 0){
+            try {
+                nowState = SUCCESS;
+                // method ออกตั๋ว(selectStation); throw new Exception("Something wrong, please contact staff");
+                nowState = READY;
+                System.out.println("Get your ticket.");
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+            if (change > 0){
+                // method ทอนเงิน(change);
+                System.out.println("Your change is : "+change);
+            }
+        }else if (nowCost > 0){
+            System.out.println("Need more coin.");
+            try {
+                payCoin(coin); throw new Exception("Insert a coin.");
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+        }
     }
 
 
