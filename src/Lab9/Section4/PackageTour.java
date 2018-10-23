@@ -13,7 +13,7 @@ public class PackageTour implements Tour {
         this.packageName = packageName;
     }
 
-    public void newTour(Tour tour){
+    public void newTour(Tour tour){ //เพิ่มทัวร์ใหม่
         this.tours.add(tour);
         this.totalSeat = this.tours.get(0).getAvailableSeats();
     }
